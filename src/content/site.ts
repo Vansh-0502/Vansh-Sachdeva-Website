@@ -9,7 +9,7 @@ export const site = {
   monogram: "VS",
 
   /** Replace with your real domain once you deploy (used for SEO, sitemap, social previews). */
-  url: "https://vanshsachdeva.com",
+  url: "https://vanshsachdeva.vercel.app",
 
   /** Used in the browser tab and when the link is shared. */
   title: "Vansh Sachdeva — Economics, Finance & Things I Build",
