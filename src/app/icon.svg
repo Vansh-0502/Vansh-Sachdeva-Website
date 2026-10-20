@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#0F100D"/>
+  <text x="8" y="45" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#ECE6D8" letter-spacing="-2">V</text>
+  <text x="31" y="45" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="34" fill="#C9F24B">S</text>
+  <rect x="8" y="52" width="48" height="2" fill="#C9F24B"/>
+</svg>
