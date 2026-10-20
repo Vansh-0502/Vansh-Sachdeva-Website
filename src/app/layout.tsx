@@ -7,6 +7,7 @@ import { ScrollProgress } from "@/components/ScrollProgress";
 import { RevealObserver } from "@/components/RevealObserver";
 import { PageTransition } from "@/components/PageTransition";
 import { DetailsAnimator } from "@/components/DetailsAnimator";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -72,6 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <RevealObserver />
         <PageTransition />
         <DetailsAnimator />
+        <Analytics />
       </body>
     </html>
   );
