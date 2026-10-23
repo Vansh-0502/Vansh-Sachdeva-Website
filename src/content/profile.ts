@@ -146,5 +146,7 @@ export const milestones = [
   { date: "May 2025", label: "Air India — research assistance begins", short: "Air India" },
   { date: "Jul 2025", label: "SUPROS — investment banking internship", short: "SUPROS" },
   { date: "Sep 2025", label: "Project Mini Traders — first sessions", short: "Mini Traders" },
+  { date: "Early 2026", label: "Econospect — learning platform launched", short: "Econospect" },
+  { date: "Mid 2026", label: "Accessible Economics — teaching modules begin", short: "Accessible Economics" },
   { date: "Jun 2026", label: "GradeEco — launched 15 June", short: "GradeEco" },
 ];

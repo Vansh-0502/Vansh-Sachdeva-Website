@@ -2,7 +2,7 @@ import Link from "next/link";
 import { categoryLabel, projects, type Category } from "@/content/projects";
 import { site } from "@/content/site";
 import { SectionHead } from "../SectionHead";
-import { ShareFigure } from "../Figures";
+import { BrailleFigure, MarketFigure, ShareFigure } from "../Figures";
 
 /*
  * The filters are plain radio buttons styled as tabs, and the hiding is done
@@ -17,7 +17,9 @@ const filters: { id: "all" | Category; label: string }[] = [
 ];
 
 const secondaryFigure: Record<string, React.ReactNode> = {
+  econospect: <MarketFigure />,
   "mini-traders": <ShareFigure />,
+  community: <BrailleFigure />,
 };
 
 function StatusBadge({ text }: { text: string }) {

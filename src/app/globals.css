@@ -23,14 +23,15 @@
 }
 
 html[data-theme="light"] {
-  --ink: 244 240 231;
-  --ink-2: 235 230 217;
-  --ink-3: 226 220 205;
-  --paper: 22 23 16;
-  --paper-dim: 84 82 72;
-  --paper-faint: 116 113 101;
-  --lime: 72 100 0;
-  --lime-hover: 58 82 0;
+  /* cool paper white, deep navy text, cobalt accent */
+  --ink: 246 247 250;
+  --ink-2: 236 239 245;
+  --ink-3: 225 230 239;
+  --paper: 14 21 38;
+  --paper-dim: 72 82 102;
+  --paper-faint: 106 115 134;
+  --lime: 40 72 214;
+  --lime-hover: 30 56 178;
   color-scheme: light;
 }
 
@@ -296,6 +297,19 @@ html[data-theme="light"] {
   83%  { transform: translate(0px, 78px); }
 }
 
+/* Econospect: demand shifts right and back; the meeting point follows */
+.mkt-shift { animation: mkt-shift 4s ease-in-out infinite alternate; }
+.mkt-eq { animation: mkt-eq 4s ease-in-out infinite alternate; }
+@keyframes mkt-shift { to { transform: translateX(40px); } }
+@keyframes mkt-eq { to { transform: translate(20px, -10px); } }
+
+/* braille dots in the Accessible Economics card light up one letter at a time */
+.braille-dot { animation: braille 2.4s ease-in-out infinite; opacity: 0.25; }
+@keyframes braille {
+  0%, 100% { opacity: 0.25; }
+  15%, 40% { opacity: 1; }
+}
+
 /* award squares light up one after another, then reset */
 .award-mark { animation: award-mark 4.5s ease-in-out infinite; }
 @keyframes award-mark {
@@ -389,7 +403,8 @@ html[data-theme="light"] .theme-toggle .tt-moon { opacity: 1; transform: none; }
   .sh .label { opacity: 1 !important; }
   .film-track { animation: none !important; }
   .page-in { animation: none !important; }
-  .portrait-orbit, .flow-dot-x, .flow-dot-y, .rail-dot, .share-hop, .caret, .logo-dot, .award-mark, .reel-dot { animation: none !important; }
+  .portrait-orbit, .flow-dot-x, .flow-dot-y, .rail-dot, .share-hop, .caret, .logo-dot, .award-mark, .reel-dot, .braille-dot, .mkt-shift, .mkt-eq { animation: none !important; }
+  .braille-dot { opacity: 1; }
   .award-mark { background: rgb(var(--lime)); }
   .flow-dot-x, .flow-dot-y, .rail-dot, .hero-traveller { display: none; }
   .share-hop { transform: translate(66px, 26px); }

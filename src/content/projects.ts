@@ -88,8 +88,34 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "mini-traders",
+    slug: "econospect",
     index: "P.02",
+    title: "Econospect",
+    kicker: "A learning platform for economics and finance",
+    category: "project",
+    role: "Creator",
+    dates: "Live",
+    year: "2026",
+    summary:
+      "A learning platform that makes economics and finance easier to understand, with clear explanations, interactive tools and real-world context.",
+    intro:
+      "Econospect is a learning platform I made to help people understand money, markets and economies. It brings together clear explanations, interactive tools and real-world context, so the ideas are easier to follow and to use.",
+    sections: [
+      {
+        heading: "What it covers",
+        body: [
+          "How money, markets and economies work, explained in plain language.",
+          "Interactive tools that let you see a concept in action rather than only read about it.",
+          "Real-world context, so each idea is connected to something you can recognise.",
+        ],
+      },
+    ],
+    themes: ["Economics education", "Finance", "Web development"],
+    links: [{ label: "Visit Econospect", href: "https://finance-and-economics-educational-platform.vercel.app/" }],
+  },
+  {
+    slug: "mini-traders",
+    index: "P.03",
     title: "Project Mini Traders",
     kicker: "Teaching younger students how markets work",
     category: "education",
@@ -119,31 +145,6 @@ export const projects: Project[] = [
     links: [{ label: "Visit Mini Traders", href: "https://mini-traders.vercel.app/" }],
   },
   {
-    slug: "research",
-    index: "P.03",
-    title: "Economics & Finance Research",
-    kicker: "Retail investor participation & financial inclusion",
-    category: "research",
-    role: "Independent researcher",
-    dates: "2025 – present",
-    year: "2025",
-    status: "Still in progress",
-    summary:
-      "Ongoing research on retail investor participation and financial inclusion in India.",
-    intro:
-      "Alongside school, I am researching retail investor participation and financial inclusion in India: who takes part in the country's financial markets, and what helps or stops more people from doing so. This work is still in progress.",
-    sections: [
-      {
-        heading: "How I approach it",
-        body: [
-          "Each project is framed around a question rather than a topic, and starts from what has already been written about it.",
-          "The research is still in progress, so there are no findings or publications to share yet.",
-        ],
-      },
-    ],
-    themes: ["Retail investors", "Financial inclusion", "Indian markets"],
-  },
-  {
     slug: "community",
     index: "P.04",
     title: "Accessible Economics",
@@ -167,6 +168,32 @@ export const projects: Project[] = [
       },
     ],
     themes: ["Accessibility", "Teaching materials", "Volunteering"],
+    links: [{ label: "Visit Accessible Economics", href: "https://economics-and-finance-teaching-modu.vercel.app/" }],
+  },
+  {
+    slug: "research",
+    index: "P.05",
+    title: "Economics & Finance Research",
+    kicker: "Retail investor participation & financial inclusion",
+    category: "research",
+    role: "Independent researcher",
+    dates: "2025 – present",
+    year: "2025",
+    status: "Still in progress",
+    summary:
+      "Ongoing research on retail investor participation and financial inclusion in India.",
+    intro:
+      "Alongside school, I am researching retail investor participation and financial inclusion in India: who takes part in the country's financial markets, and what helps or stops more people from doing so. This work is still in progress.",
+    sections: [
+      {
+        heading: "How I approach it",
+        body: [
+          "Each project is framed around a question rather than a topic, and starts from what has already been written about it.",
+          "The research is still in progress, so there are no findings or publications to share yet.",
+        ],
+      },
+    ],
+    themes: ["Retail investors", "Financial inclusion", "Indian markets"],
   },
 ];
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { categoryLabel, getProject, projects } from "@/content/projects";
 import { research, statusLabel } from "@/content/research";
-import { ShareFigure } from "@/components/Figures";
+import { BrailleFigure, MarketFigure, ShareFigure } from "@/components/Figures";
 import { Reveal } from "@/components/Reveal";
 
 type Params = { slug: string };
@@ -33,8 +33,12 @@ export default async function ProjectPage({ params }: { params: Promise<Params> 
   const next = projects[(i + 1) % projects.length];
 
   const figure =
-    p.slug === "mini-traders" ? (
+    p.slug === "econospect" ? (
+      <MarketFigure />
+    ) : p.slug === "mini-traders" ? (
       <ShareFigure />
+    ) : p.slug === "community" ? (
+      <BrailleFigure />
     ) : null;
 
   return (

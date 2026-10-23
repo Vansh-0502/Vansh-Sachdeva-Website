@@ -16,7 +16,7 @@ const MONTHS = ["A", "M", "J", "J", "A", "S", "O", "N", "D", "J", "F", "M", "A",
 const SPAN = 15; // months shown, Apr 2025 → Jul 2026
 
 // where each milestone sits on the time axis (months after 1 Apr 2025)
-const MILESTONE_X = [1.3, 3.1, 5.5, 14.5];
+const MILESTONE_X = [1.3, 3.1, 5.5, 10.5, 13.4, 14.5];
 
 function curve(x: number) {
   const t = x / SPAN;
