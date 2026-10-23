@@ -144,12 +144,9 @@ export function Projects() {
                   {secondaryFigure[p.slug]}
                 </Link>
                 <div className="md:col-span-7">
-                  <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-                    <span className="label">
-                      {p.index} · {categoryLabel[p.category]}
-                    </span>
-                    <span className="label">{p.dates}</span>
-                  </div>
+                  <span className="label">
+                    {p.index} · {categoryLabel[p.category]}
+                  </span>
                   <h3 className="display mt-6 text-[2.4rem] leading-none md:text-[3.2rem]">
                     <Link href={`/projects/${p.slug}`} className="transition-colors hover:text-lime">
                       {p.title}
